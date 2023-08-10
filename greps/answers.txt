@@ -1,15 +1,15 @@
 # Part 1
 ### a)
-
+ggrep -P "bulb" filescan_00.1 > bulbasaur.txt
 
 
 
 ### b)
-
+ggrep -P "char" | "izard$" filescan_00.2 > charizard.txt
 
 
 ### c)
-
+ggrep -P "^pika" | ggrep -P "chu$" filescan_00.3 > pikachu.txt
 
 
 
@@ -24,13 +24,42 @@
 
 # Part 2
 ### a)
-
-
-
+wc -l beedrill.txt     : 40 beedrill.txt
+wc -l ivysaur.txt      : 33 ivysaur.txt
+wc -l charmeleon.txt   : 37 charmeleon.txt
+wc -l charmander.txt   : 36 charmander.txt
+wc -l charizard.txt    : 40 charizard.txt
+wc -l butterfree.txt   : 38 butterfree.txt
+wc -l bulbasaur.txt    : 30 bulbasaur.txt
+wc -l blastoise.txt    : 38 blastoise.txt
+wc -l ivysaur.txt      : 33 ivysaur.txt
+wc -l jigglupuff.txt   : 34 jigglupuff.txt
+wc -l meowth.txt       : 33 meowth.txt
+wc -l pikachu.txt      : 40 pikachu.txt
+wc -l psyduck.txt      : 37 psyduck.txt
+wc -l venusaur.txt     : 32 venusaur.txt
+wc -l wartotle.txt     : 37 wartotle.txt
 
 
 
 ### b)
+find . -type f | xargs wc -l
+      34 ./jigglupuff.txt
+      38 ./blastoise.txt
+      37 ./wartotle.txt
+      30 ./bulbasaur.txt
+      40 ./charizard.txt
+      40 ./beedrill.txt
+      38 ./butterfree.txt
+       1 ./instruction.txt
+      32 ./venusaur.txt
+      33 ./ivysaur.txt
+      40 ./pikachu.txt
+      33 ./meowth.txt
+      36 ./charmander.txt
+      37 ./charmeleon.txt
+      37 ./psyduck.txt
+     506 total
 
 
 
